@@ -1,0 +1,11 @@
+{
+  "name": "AWS Health Events",
+  "type": "grafana-athena-datasource",
+  "jsonData": {
+    "authType": "default",
+    "catalog": "AwsDataCatalog",
+    "database": "aws-health-event-records",
+    "workgroup": "health-events-workgroup",
+    "defaultRegion": "us-east-1"
+  }
+}

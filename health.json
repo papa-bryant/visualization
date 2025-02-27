@@ -1,0 +1,8 @@
+[
+    {
+      "Source": "custom.health",
+      "DetailType": "AWS Health Event",
+      "Detail": "{\"eventArn\":\"arn:aws:health:us-east-1::event/TEST/test-event/test123456789\",\"service\":\"TEST\",\"eventTypeCode\":\"TEST_EVENT_AGAIN\",\"eventTypeCategory\":\"issue\",\"region\":\"us-east-1\",\"startTime\":\"2023-02-23T00:00:00Z\",\"eventDescription\":[{\"language\":\"en_US\",\"latestDescription\":\"Testing modular account settings.\"}]}",
+      "EventBusName": "default"
+    }
+  ]
