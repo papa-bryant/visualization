@@ -7,6 +7,12 @@ resource "aws_grafana_workspace" "health_events_workspace" {
   role_arn                  = aws_iam_role.grafana_role.arn
   data_sources              = ["ATHENA"]
   notification_destinations = ["SNS"]
+
+  # This VPC configuration is what makes Grafana private
+  vpc_configuration {
+    subnet_ids         = var.private_subnet_ids
+    security_group_ids = [aws_security_group.grafana_sg.id]
+  }
 }
 
 # IAM role for Grafana
